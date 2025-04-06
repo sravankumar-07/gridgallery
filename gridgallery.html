@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(4,1fr);
+            height: 100vh;
+            width: 100vw;
+            grid-template-areas: "img1 img1 img2 img3"
+                                 "img4 img5 img2 img6"
+                                 "img7 img5 img10 img10"
+                                 "img8 img9 img10 img10"
+            ;
+            gap: 5px;
+            
+        }
+        .img1{
+            grid-area: img1;
+        }
+        .img2{
+            grid-area: img2;
+        }
+        .img3{
+            grid-area: img3;
+        }
+        .img4{
+            grid-area: img4;
+        }
+        .img5{
+            grid-area: img5;
+        }
+        .img6{
+            grid-area: img6;
+        }
+        .img7{
+            grid-area: img7;
+        }
+        .img8{
+            grid-area: img8;
+        }
+        .img9{
+            grid-area: img9;
+        }
+        .img10{
+            grid-area: img10;
+        }
+        img{
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 align="center">BEN 10</h1>
+    <div class="container">
+        <img src="./ben2.jpg" alt="" class="img2">
+        <img src="./ben1.jpg" alt="" class="img1">
+        <img src="./ben3.jpg" alt="" class="img3">
+        <img src="./ben4.jpg" alt="" class="img4">
+        <img src="./ben5.jpg" alt="" class="img5">
+        <img src="./ben6.jpg" alt="" class="img6">
+        <img src="./ben7.jpg" alt="" class="img7">
+        <img src="./ben8.jpg" alt="" class="img8">
+        <img src="./ben9.jpg" alt="" class="img9">
+        <img src="./ben10.jpg" alt="" class="img10">
+    </div>
+</body>
+</html>
